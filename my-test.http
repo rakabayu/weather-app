@@ -1,0 +1,5 @@
+
+get https://restcountries.com/v3.1/alpha/nz
+
+get https://api.openweathermap.org/data/2.5/weather?q=jakarta&appid=f45faf2f106588cb6bd1a52a61be4cdd&units=metric
+
