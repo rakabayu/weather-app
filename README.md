@@ -25,5 +25,8 @@ A simple weather application built with React and TypeScript that allows users t
 - Tailwind CSS
 - OpenWeather API
 - REST Countries API
+
+---
+
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
