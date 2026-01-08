@@ -1,9 +1,9 @@
 export async function fetchWeather(city: string) {
-  const apiKey = "f45faf2f106588cb6bd1a52a61be4cdd";
+  const API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
 
   try {
     const res = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
     );
 
     //if API returns 404, 401, etc.

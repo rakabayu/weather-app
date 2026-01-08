@@ -31,7 +31,7 @@ export default function WeatherCard({ data, onDelete }: WeatherCardProps) {
           <span className="text-xs text-slate-500 truncate">
             {data.country}
           </span>
-          <h3 className="text-lg font-semibold w-40 text-slate-800 truncate">
+          <h3 className="block text-lg font-semibold w-40 text-slate-800 text-left">
             {data.city}
           </h3>
         </div>
@@ -40,9 +40,9 @@ export default function WeatherCard({ data, onDelete }: WeatherCardProps) {
             {Math.round(data.temperature)}°C
           </h3>
         </div>
-        <div>
+        <div className="w-20">
           <img src={iconSrc} alt={data.weather} className="w-10 h-10" />
-          <span className="text-sm text-slate-600">
+          <span className=" block text-sm text-slate-600 text-left">
             {capitalizeWord(data.description)}
           </span>
         </div>

@@ -58,7 +58,8 @@ export default function WeatherApp() {
         <header className="text-center space-y-1">
           <h1 className="text-2xl font-bold text-slate-800">Weather App</h1>
           <p className="text-sm text-slate-600">
-            Check the weather in your city
+            Check the weather in your city{" "}
+            <span className="italic text-slate-400">- by Raka Bayu</span>
           </p>
           <div>
             <SearchBar onSearch={handleSearch} fetchSucceed={fetchSucceed} />
